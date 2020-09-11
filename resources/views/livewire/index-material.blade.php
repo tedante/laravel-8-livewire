@@ -1,5 +1,5 @@
 <div>
     @foreach ($data->data as $item)
-    {{ $item->name }} <br>
+        <livewire:single-material :item="$item" :key="$item->id">
     @endforeach
 </div>
